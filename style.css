@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #202020;
+    color: rgb(183, 221, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #38b100;
+    box-shadow: 0 0 0 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+.status{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+button{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color: wheat;
+    background-color: rgba(16, 116, 211, 0.856);
+    border-radius: 10px;
+    border: none;
+}
+.win{
+    animation: winAnimation ease-in-out 1s infinite;
+}
+@keyframes winAnimation {
+    0%{background-color: #ca0505;}
+    100%{background-color: aqua;}
+    
+}
